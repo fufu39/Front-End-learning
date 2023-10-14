@@ -1,0 +1,32 @@
+文本域:多行输入文本的表单控件textarea<br>
+<textarea>请输入评论 </textarea><br>
+<!-- 中间放提示文字 -->
+
+label标签:添加说明文本~增大表单控件的点击范围!<br>
+
+写法一:<!-- label只包裹内容,不包裹表单控件;它的for属性值要和表单控件id属性值相同 -->
+<input type="radio" name="gender" id="man">
+<label for="man">男</label>
+<input type="radio" name="gender" id="woman">
+<label for="woman">女</label>
+
+<br><br>
+文本二:<!-- label包裹文字和表单控件,不需要属性 -->
+<label><input type="radio" name="gender">男 </label>
+<label><input type="radio" name="gender">女 </label>
+
+<br><br><br>
+
+
+<!-- 按钮:button -->
+<!-- type属性:submit提交数据到后台(默认) ; reset:重置,恢复默认值 ; button默认无功能,要结合js用 -->
+
+<!-- 按钮想要能用需要form标签:表单区域标签 -->
+<!-- action是发送数据的地址 -->
+<form action="">
+    用户名: <input type="text"> <br><br>
+    密码:<input type="password"> <br><br>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">button</button>
+</form>

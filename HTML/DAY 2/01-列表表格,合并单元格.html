@@ -1,0 +1,75 @@
+<!-- 列表:无序列表,有序列表,顺序列表 -->
+无序列表~
+<ul>
+    <li>第一项</li>
+    <li>第二项</li>
+    <li>第三项</li>
+</ul>
+<!-- 这里ul是整体,li是条目 -->
+
+有序列表~
+<ol>
+    <li>第一项</li>
+    <li>第二项</li>
+    <li>第三项</li>
+</ol>
+
+定义列表~
+<!-- dl嵌套dt和dd,dt是标题,dd是下面的条目 -->
+<dl>
+    <dt>关于b站</dt>
+    <dd>番剧</dd>
+    <dd>直播</dd>
+    <dd>会员购</dd>
+</dl>
+
+
+
+
+
+表格:table嵌套tr,tr嵌套th/td
+<!-- tr行,th表头单元格,td内容单元格 -->
+<!-- 表格默认没有边框线,需添加border属性 -->
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th>语文</th>
+        <th>数学</th>
+        <th>英语</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>99</td>
+        <td>100</td>
+        <td>98</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>96</td>
+        <td>100</td>
+        <td>100</td>
+    </tr>
+</table>
+
+合并单元格:将多个单元格合并成一个,有跨行合并rowspan和跨列合并colspan<br>
+保留最左最上的那个
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th>语文</th>
+        <th>数学</th>
+        <th>英语</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>99</td>   <!-- 取值是合并单元格的数量 -->
+        <td rowspan="2">100</td>
+        <td>98</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>96</td>
+        <!-- 被合并的这一行删除 -->
+        <td>100</td>
+    </tr>
+</table>
