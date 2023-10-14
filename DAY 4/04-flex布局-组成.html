@@ -1,0 +1,26 @@
+flex布局,也叫弹性布局 (非常适合结构化布局,提供强大空间分布和对齐能力)
+不会脱标,更简单灵活
+FLEX才是神中神!!!
+
+给父元素设置display:flex ,子元素自身可以自动挤压或拉伸
+
+<style>
+    .box{
+        display: flex;
+
+        height: 300px;
+        border: 1px solid #000;
+    }
+
+    /* 弹性盒子沿着主轴方向排列 */
+    .box div{
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+    }
+</style>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>

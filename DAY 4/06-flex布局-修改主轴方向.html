@@ -1,0 +1,25 @@
+修改主轴方向:flex-direction
+属性值:row水平方向从左向右(默认)  column垂直方向丛上到下  加-reverse反向
+
+<style>
+    .box{
+        display: flex;
+        flex-direction: column;
+        /* 主轴垂直了,侧轴自动变水平方向 */
+        justify-content: center;
+
+        align-items: center;/* 控制侧轴 */
+
+        width: 150px;
+        height: 120px;
+        background-color: pink;
+    }
+    img{
+        width: 64px;
+        height: 64px;
+    }
+</style>
+<div class="box">
+    <img src="./波奇1.jpg">
+    <span>波奇酱</span>
+</div>

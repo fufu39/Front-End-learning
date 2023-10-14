@@ -1,0 +1,67 @@
+1.背景图:background-image(bgi)  属性值url
+
+2.背景图平铺方式:background-repeat(bgr) 属性值:no-repeat不平铺 repeat平铺(默认) repeat-x(水平方向平铺) repeat-y(竖直方向平铺)
+
+3.背景图位置:background-position(bgp)  属性值:水平位置 垂直位置 (正负数字+px[正数向右/下移动];关键词[可颠倒顺序]center,bottom,top等都行) \
+    关键字写一个,另一个默认居中; 数字只写一个默认水平方向,竖直方向居中
+
+4.背景图的缩放:background-size(bgs)  属性值: 
+    关键字:cover等比例缩放完全覆盖背景区(部分图可能看不见) contain等比例缩放完全装入背景区(可能部分背景区无法覆盖)
+    百分比:根据盒子尺寸计算图片大小       数字+单位(如px)
+
+5.背景图的固定:background-attachment(bga) 属性值:fixed
+
+<style>
+    div{
+        width: 500px;
+        height: 400px;
+        /* 背景图默认是平铺的效果 */
+        background-color: pink;
+        background-image: url(./波奇1.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        /* background-size: 100%;宽和盒子一样,高不一定 */
+        background-size: cover;
+    }
+    body{
+        background-image: url(./波奇2.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+</style>
+<div>div标签</div>
+<body>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+<p>撑开body,让浏览器有滚动条</p>
+</body>

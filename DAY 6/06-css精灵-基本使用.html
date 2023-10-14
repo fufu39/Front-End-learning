@@ -1,0 +1,32 @@
+css sprites是一种网页图片处理方式,把背景小图整合到一张图片里,再background-position定位它的位置
+优点:减少服务器被请求次数,提高页面加载速度
+步骤:
+1.创建盒子,尺寸与小图相同
+2.设置背景图为精灵图
+3.添加background-position属性改变位置(取左上角坐标点)(左上移动取负数)
+<style>
+    .box{
+        display: flex;
+    }
+    .box div{
+        width: 112px;
+        height: 110px;
+        background-color: skyblue;
+        background-image: url(./abcd.jpg);
+    }
+    .box .a{
+       background-position: -135px -413px;
+    }
+    .box .b{
+       background-position: -483px -7px;
+    }
+    .box .c{
+       background-position: -118px -275px;
+    }
+
+</style>
+<div class="box">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</div>

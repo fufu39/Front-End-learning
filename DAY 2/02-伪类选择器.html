@@ -1,0 +1,41 @@
+伪类表示元素状态,选中元素的某个状态设置样式
+
+鼠标悬停状态:选择器:hover{CSS属性}
+
+伪类-超链接
+:link访问前
+:visited访问后
+:hover悬停时
+:active点击时
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+         a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: green;
+        } 
+        .box:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">超链接</a>
+    <div class="box">div标签</div>
+
+</body>
+</html>

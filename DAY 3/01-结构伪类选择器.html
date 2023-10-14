@@ -1,0 +1,25 @@
+结构伪类选择器:依据结构关系查找元素 (E代表一种选择器)E:first-child 查找第一个元素 last-child查找最后一个元素 nth-child(N)查找第n个元素
+<style>
+    li:first-child{
+        background-color: green;
+    }
+    li:nth-child(2){
+        background-color: red;
+    }
+
+    /* 用公式查找多个元素 *//* n从零开始 */
+    /* 2n:偶数 2n+/-1:奇数 5n:5的倍数   第五个(包括5)以后的标签:n+5 第五个以前:-n+5  */
+    li:nth-child(2n){
+        background-color: orange;
+    }
+</style>
+<ul>
+    <li>li 1</li>
+    <li>li 2</li>
+    <li>li 3</li>
+    <li>li 4</li>
+    <li>li 5</li>
+    <li>li 6</li>
+    <li>li 7</li>
+    <li>li 8</li>
+</ul>

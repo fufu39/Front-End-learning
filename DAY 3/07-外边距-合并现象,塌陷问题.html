@@ -1,0 +1,44 @@
+合并现象:垂直排列的同级元素,上下margin取较大值生效
+
+塌陷问题:父子级标签,子级添加上边距,会导致塌陷,父级一起向下移动
+解决:1.取消子级margin,父级设上padding, 同时启动内减
+2.父级设置overflow: hidden
+3.父级设置border-top (通过边框线让浏览器找到正确边缘)
+<style>
+    .one{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+
+        margin-bottom: 20px;
+    }
+    .two{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+
+        margin-top: 60px;
+    }
+    .father{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+
+        /* overflow: hidden; */
+        border-top: 1px solid #000;
+    }
+    .son{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+
+        margin-top: 100px;
+    }
+</style>
+<div class="one">div 1</div>
+<div class="two">div 2</div>
+<br>
+
+<div class="father">
+    <div class="son">son</div>
+</div>

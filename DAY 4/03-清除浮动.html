@@ -1,0 +1,58 @@
+场景:浮动元素脱标,如果父级没有高度,子级无法撑开父级高度(可能导致布局错乱)]
+解决方法:清除浮动带来的影响
+1.额外标签法:在父级内容的最后添加一个块级元素,设置属性clear: both  2.单伪元素法  3.双伪元素法  4.overflow(检测出父级范围)
+<style>
+    .top{
+        margin: 10px auto;
+        width: 1200px;
+        /* height: 300px; */
+        background-color: pink;
+
+        /* overflow法 */
+        /* overflow: hidden; */
+    }
+    .bottom{
+        height: 100px;
+        background-color: brown;
+    }
+    .left{
+        float: left;
+        width: 200px;
+        height: 300px;
+        background-color: skyblue;
+    }
+    .right{
+        float: right;
+        width: 950px;
+        height: 300px;
+        background-color: orange;
+    }
+    /* 额外标签法 */
+    /* .clearfix{
+        clear: both;} */
+
+    /* 单伪元素法 
+     .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+    } */
+
+    /* 双伪元素法 (推荐)*/
+    /* before是解决外边距塌陷问题 */
+    .clearfix::before,
+    .clearfix::after{
+        content: "";
+        display: table;
+    }
+    .clearfix::after{
+        clear: both;
+    }
+
+</style>
+<div class="top clearfix">
+    <div class="left"></div>
+    <div class="right"></div>
+    <!-- 额外<div class="clearfix"></div> -->
+</div>
+<div class="bottom"></div>

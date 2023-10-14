@@ -1,0 +1,22 @@
+堆叠顺序z-index  ~后来者居上
+<style>
+    div{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+
+    .box1{
+        background-color: pink;
+        /* 取值是整数，默认0，取值大显示顺序越靠上 */
+        z-index: 1;
+    }
+
+    .box2{
+        background-color: skyblue;
+        left: 100px;
+        top: 100px;
+    }
+</style>
+<div class="box1">box1</div>
+<div class="box2">box2</div>

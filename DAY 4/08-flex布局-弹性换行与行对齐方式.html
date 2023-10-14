@@ -1,0 +1,42 @@
+弹性盒子自动挤压或拉伸,默认情况下,所有盒子都在一行显示
+换行:flex-wrap  属性值:wrap换行  nowrap:不换行(默认)
+
+行对齐方式:align-content (对单行不生效)
+(flex-start:起点开始依次排列  flex-end:终点开始依次排列)
+center:沿主轴居中排列  space-between:左右贴着,空白间距均分在盒子之间  
+space-around:空白间距均分给每个盒子两侧(盒子间是两头两倍)  space-evenly:各个间距都相等
+
+<style>
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+
+        height: 300px;
+        border: 1px solid #000;
+
+        justify-content: center;
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        align-content: space-around;
+
+    }
+    .box div{
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+    }
+</style>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>

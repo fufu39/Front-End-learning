@@ -1,0 +1,18 @@
+盒子尺寸=宽高尺寸+border尺寸+内边距尺寸  ~所以加border,padding都会撑大盒子
+
+解决方法:1.手动减法  2.内减模式:box-sizing: border-box 启动!!!
+
+外边距:margin~用法和内边距完全一样   使用auto控制左右(前提是盒子要有宽度)
+版心居中:
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+
+        box-sizing: border-box;
+
+        margin: 0 auto;
+    }
+</style>
+<div>div标签</div>

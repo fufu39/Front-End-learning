@@ -1,0 +1,48 @@
+1.继承性:子级标签默认继承父级标签的文字控制属性 (但是如果有自己的样式就显示自己的~如超链接颜色不会继承;h1字号不会继承)
+
+<style>
+    body{
+        font-size: 30px;
+        color: red;
+    }
+</style>
+<body>
+    <p>p</p>
+    <a href="#">a标签</a>
+    <h1>h1标签</h1>
+</body>
+
+2.层叠性:
+相同的属性会覆盖:后面覆盖前面
+不同的属性会叠加:不同的都生效
+<style>
+    div{
+        color: red;
+        font-weight: 700;
+    }
+    div{
+        color: green;
+    }
+</style>
+<div>div标签</div>
+
+3.优先级:也叫权重,当一个标签使用多种选择器时,基于不同选择器的匹配规则
+选中标签范围越大,优先级越低: 通配符选择器< 标签选择器< 类选择器< id选择器< 行内样式表< !important
+(!important是用来提优先级的~提权)<!-- 举例:span{color: red !important;} -->
+
+优先级:叠加计算规则
+如果是复合选择器,需要权重叠加计算
+公式:行内样式,id选择器个数,类选择器个数,标签选择器个数 (从左到右,同一级个数多的优先级高,个数相等就向后比较)
+特殊~ !important最高,继承最低
+
+<style>
+    span{
+        color: red;
+    }
+    .box{
+        color: green;
+    }
+</style>
+<span class="box">span标签 </span>
+
+

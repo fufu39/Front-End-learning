@@ -1,0 +1,39 @@
+网站根目录是指存放网站的第一层文件夹,包含当前网站所有素材,包含HTML,CSS,图片,JavaScript等
+.根目录
+    .image :存放固定使用的图片素材,如logo,样式修饰图
+    .uploads :存放非固定使用的图片素材,如商品图,宣传图需要上传的图片
+    .css :存放CSS文件(link标签引入)
+        base.css :基础公共样式,如清除默认样式,设置网页基本模式
+        index.css:首页CSS样式
+index.html
+
+
+
+网页布局思路:先整体再局部,从上到下,从左到右
+css思路:画盒子,调位置,控制图片文字
+
+logo功能:单击跳转到主页;搜索引擎优化:提升网站百度搜索的排名
+实现方法:标签结构:h1>a>网站名称(搜索关键字)
+
+nav功能:单击跳转页面
+实现方法:标签结构:ul>li*3>a  (这样避免堆砌a标签使网站搜索排名降级)
+
+search功能:标签结构:search>input +a/button
+
+user功能:标签结构: .user>a>img+span
+
+
+banner相关:
+左侧测导航(left)
+标签结构:.left>ul>li*9>a
+a默认状态,背景图为白色右箭头
+
+右侧课程表(right)
+标签结构:.right>h3+.content
+
+
+精品推荐(recommend)
+标签结构:.recommend>h3+ul+a.modify
+
+精品课程区域(course)
+标签结构:.hd+.bd

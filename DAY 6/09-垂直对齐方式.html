@@ -1,0 +1,18 @@
+vertical-align ~ baseline基线对齐(默认)(像英文单词基于基线,下面会有一小行空白)   
+~想去除空白display:block也可以
+<!-- 因为浏览器把行内块,行内标签当文字处理基线对齐.使img地下有空白,转块级不按基线对齐,空白消失 -->
+
+middle居中对齐 top bottom
+
+<style>
+    div{
+        border: 1px solid #000;
+    }
+    img{
+        vertical-align: middle;
+    }
+</style>
+<div>
+    <img src="./猫.webp" alt="">
+    末日时在做什么?有没有空?可以来拯救吗?
+</div>

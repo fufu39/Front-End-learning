@@ -1,0 +1,35 @@
+布局网页,摆放盒子和内容
+组成部分:
+内容区域-width&height 
+
+外边距-margin(出现在盒子外面,上下左右)
+
+边框线-border(bd)   属性值:粗细 颜色  线条样式:solid实线 dashed虚线 dotted点线
+单方向边框线:border+方位名词
+
+内边距-padding(内容与盒子边缘之间,上下左右)
+单独某个方向:padding-方位名词
+多值写法:padding:10px 20px 40px 80px;上 右 下 左   padding:10px 20px 40px;上 左右 下  padding:10px 20px;上下 左右
+<!-- 记忆方法:从上开始,顺时针转一圈,如果当前方向没有数值,取值和对面一样 -->
+
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+
+        /* padding: 20px; */
+
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 80px;
+
+        /* border: 5px dotted #000; */
+        border-left: 3px dotted #000;
+        border-right: 3px solid red;
+        border-bottom: 3px solid green;
+
+        margin: 50px;
+    }
+</style>
+<div>div标签</div>

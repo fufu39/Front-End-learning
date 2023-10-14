@@ -1,0 +1,49 @@
+子绝父相！
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 400px;
+    }
+
+    .news {
+      position: relative;
+
+      margin: 100px auto;
+      width: 400px;
+      height: 350px;
+      background-color: #f8f8f8;
+    }
+
+    /* 绝对定位 */
+    /* 
+    1.脱标,不占位置
+    2.参照物:先找最近的已经定位的祖先元素,如果没有参照浏览器窗口
+    3.绝对定位宽高生效,具有行内块特点
+    */
+    .news span {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      /* display: block; */
+      width: 92px;
+      height: 32px;
+      background-color: rgba(0,0,0,0.6);
+      text-align: center;
+      line-height: 32px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="news">
+    <img src="./news.jpg" alt="">
+    <span>展会活动</span>
+    <h4>世界移动大会</h4>
+  </div>
+</body>
+</html>

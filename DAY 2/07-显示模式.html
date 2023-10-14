@@ -1,0 +1,45 @@
+显示模式:标签(元素)的显示方式  ~ 布局网页时,选择合适的标签摆放内容
+
+转换显示模式:属性名:display  属性值:block块级 inline-block行内块 inline行内
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+
+        /* display: inline-block; */
+        display: inline;
+    }
+    .div1{
+        background-color: orange;
+    }
+    .div2{
+        background-color: brown;
+    }
+    span{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <!-- 块级元素 -->
+    <!-- 独占一行,宽度默认是父级的100%,添加宽高属性能生效 -->
+    <div class="div1">div标签1</div>
+    <div class="div2">div标签2</div>  
+
+    <!-- 行内元素 -->
+    <!-- 一行共存多个,尺寸由内容撑开,加宽高不生效,背景色可以生效 -->
+    <span>span标签1</span>
+    <span>span标签2</span>
+
+    <!-- 行内块元素 -->
+    <!-- 一行共存多个,默认尺寸由内容撑开,加宽高能生效 -->
+    <img src="./波奇1.jpg" alt="">
+    <img src="./波奇1.jpg" alt="">
+
+</body>

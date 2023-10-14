@@ -1,0 +1,22 @@
+标准流,指的是标签在页面的默认排布规则,如div独占一行,span一行显示多个
+浮动float:让块元素水平排列 ~left左对齐 right右
+浮动之后脱离标准流控制,不再占用标准流位置(脱标)
+<style>
+    /* 浮动后:顶对齐,具有行内块显示模式特点,脱标 */
+    .one{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+
+        float: left;
+    }
+    .two{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+
+        float: right;
+    }
+</style>
+<div class="one">one</div>
+<div class="two">two</div>

@@ -1,0 +1,11 @@
+文件:
+images文件夹:固定使用的图片素材
+uploads文件夹:存放非固定使用的图片素材
+iconfont文件夹:字体图标
+css文件夹: 有base(基础公共样式) common(各模块重复的样式) index(首页css样式)
+index.html:首页html文件
+
+SEO三大标签:标题,描述,关键词
+
+Favicon:网页图标 (ico文件)
+用link连接,link:favicon

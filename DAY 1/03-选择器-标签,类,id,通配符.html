@@ -1,0 +1,48 @@
+标签选择器~使用标签名作为选择器,对于所有该标签(无法差异化)
+如p{color:red;} 
+
+<br><br><br>
+
+类选择器~查找标签,差异化设置标签的显示效果
+<style>
+    /* 定义类选择器 */
+    .red{
+        color: red;
+    }
+    .size{
+        font-size: 50px;
+    }
+</style>
+
+/* 使用类选择器 */
+<!-- 一个类选择器可以给多个标签使用 -->
+<div class="red">这是一个div标签</div>
+<div class="red size">这又是一个div标签</div>    <!-- 注意不能<div class="red" class="size">  -->
+<div>这又又是一个div标签</div> 
+
+
+<br><br><br>
+
+id选择器~作用和类选择器相近(一般配合js,很少设置css)
+<style>
+    /* 定义id选择器 */
+    #red{
+        color: red;
+    }
+</style>
+<div id="red">这是一个div标签</div>
+<div id="red">这又是一个div标签</div> 
+
+
+<br><br><br>
+
+通配符选择器~查找页面所有标签,设置相同样式
+(一般用来清除默认样式)
+<style>
+    *{
+        color: red;
+    }
+</style>
+<h1>一级标题</h1>
+<div>div标签</div>
+<p>段落标签</p>

@@ -1,0 +1,17 @@
+过渡属性:为一个元素在不同状态之间的切换添加过渡效果
+属性名:transition(加给标签本身)
+属性值:过渡的属性 花费时间(s)  (空格隔开)
+过渡的属性可以是具体的css属性,也可以是all(两个状态值不同的说有元素,都产生过渡效果)
+<br>
+<style>
+    img{
+        width: 200px;
+        height: 150px;
+        transition: all 1s;
+    }
+    img:hover{
+        width: 500px;
+        height: 400px;
+    }
+</style>
+<img src="./huawei.jpg" alt="">
